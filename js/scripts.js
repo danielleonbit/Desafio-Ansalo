@@ -12,7 +12,7 @@ $(document).ready(function() {
     }
     $(".div-botones").html(htmlBotones);
     $(".btn-show-text").click(function() {
-
+        //segundo commit
         dataTxtNumbers = $("#txtNumbers").val();
         dataTxtLetters = $("#txtLetters").val();
 
