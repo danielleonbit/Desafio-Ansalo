@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Ansalo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: aliceblue;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        .div-botones {
+            display: flex;
+            justify-content: space-between;
+            flex-flow: row wrap;
+            position: relative;
+        }
+        
+        .div-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        .btn-show-text {
+            flex: 1;
+            flex-basis: 44%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-3">
+        <div class="row justify-content-center">
+            <div class="col">
+                <h1 class="text-center">Desafio Ansalo</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="col-12">
+                    <p class="text-center">Numeros</p>
+                    <input type="text" class="form-control" id="txtNumbers" readonly>
+                </div>
+                <div class="col-12 mt-2">
+                    <p class="text-center">Letras</p>
+                    <input type="text" class="form-control" id="txtLetters" readonly>
+                </div>
+                <div class="col-12 mt-5 div-info">
+                    <div class="alert alert-warning txt-warning" role="alert"></div>
+                    <input type="button" class="btn btn-danger btn-clear" value="Reiniciar">
+                </div>
+            </div>
+            <div class="col-6 div-botones">
+
+
+            </div>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>
